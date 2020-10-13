@@ -1,6 +1,7 @@
 package ch.heigvd.amt.StoneOverflow.application.answer;
 
 import ch.heigvd.amt.StoneOverflow.domain.Question.QuestionId;
+import ch.heigvd.amt.StoneOverflow.domain.user.UserId;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -17,6 +18,9 @@ public class AddAnswerCommand {
 
     @Builder.Default
     private String description = "No content";
+
+    @Builder.Default
+    private UserId creatorId = null;
 
     @Builder.Default
     private String creator = "Anonymous";

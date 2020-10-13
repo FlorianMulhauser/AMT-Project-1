@@ -20,6 +20,7 @@ public class AnswerFacade {
         Answer addAnswer = Answer.builder().
                 answerTo(command.getAnswerTo()).
                 description(command.getDescription()).
+                creatorId(command.getCreatorId()).
                 creator(command.getCreator()).
                 nbVotes(command.getNbVotes()).
                 date(command.getDate()).build();
